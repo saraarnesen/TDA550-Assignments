@@ -1,0 +1,27 @@
+Uppgift 4 Specifikationer
+double log(double x)
+
+Ju svagare förvillkor, ju starkare specifikation.
+Ju starkare eftervillkor, ju starkare specifikation.
+
+Då två specifikationer jämförs och den ena specifikationen har ett svagare förvillkor och den
+andra specifikationen har ett starkare eftervillkor går det inte att avgöra vilken av dessa två
+specifikationer som är starkast.
+
+a)  II svagare förvillkor och starkare eftervillkor 
+b)  III starkare eftervillkor
+c)  IV svagare förvillkor och starkare eftervillkor
+d)  II svagare förvillkor 
+e) 	Ej kompatibla specifikationer
+f)  IV svagare förvillkor 
+
+Uppgift 5 Liskov Substitution Principle
+a) Tillåtet i Java, äkta subtyp enligt LSP, eftersom en subtyp 
+får ha starkare eftervillkor
+b) Tillåtet i Java, ingen äkta subtyp enligt LSP, har starkare förvillkor 
+än superklassen
+c) Inte tillåtet i Java, och ingen äkta subtyp  enligt LSP, eftersom beteendet 
+förändras när ett checked exception kastas
+d) Tillåtet i Java, men är ingen äkta subtyp enligt LSP, har svagare
+eftervillkor 
+e) Tillåtet i Java (kovarians). En äkta subtyp enligt LSP

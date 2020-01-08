@@ -1,0 +1,30 @@
+Uppgift 3 
+
+Vi har klassen: 
+
+public class Product {
+	final private int productNumber ; 
+	private String name ; 
+	private String description ;
+	private int price ; 
+	}
+
+Kontrakt för equals och hashCode
+x.equals(y) ⇒ x.hashCode() == y.hashCode().
+
+	
+(A) Equals-metoden 2, eftersom metoden tar hänsyn 
+till både namn och produktnummer. Så objekt som är equal 
+ska ha samma hashCode(). Men objekt med samma hashCode 
+behöver inte vara lika
+
+(B) Equals-metod 1,2 eftersom objekt med samma hashCode 
+behöver inte vara lika. Men behöver jämföra den
+instansvariabel som hashCode() använder sig av. 
+
+(C) 2,3 enligt ovanstående
+
+(D) Skulle rekommendera att använda hashCode
+version 1. Eftersom instansvariabeln productNumber
+är den variabel som vi vet med säkerhet inte 
+förändrar sitt värde

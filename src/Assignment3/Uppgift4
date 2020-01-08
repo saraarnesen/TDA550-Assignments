@@ -1,0 +1,42 @@
+Uppgift 4
+
+(A) Bryter mot LSP (säger att en supertyp är 
+utbytbar med sina subtyper), eftersom en cirkel närsomhelst
+borde kunna ersättas med en cylinder. 
+
+(B) Alla instansvariabler borde vara privata,
+vi har ju getters och setters
+
+(C) Saknas konstruktorer för att ange var det skapade
+objektet skall placeras i 2D rummet. Är det möjligt
+skall en instans ges sitt fullständiga tillstånd när instansen 
+skapas. 
+
+(D) Istället för att vara en String borde color vara av typen 
+Color, om det är att färga objektet man är ute efter. 
+Annars kan man döpa den till name, om det är Stringen man 
+är ute efter. Positionen kunde avbildats med Point, istället
+för två int. 
+
+(E) Kompilatorn kommer kontrollera typrtillhörighet om 
+gränssnittet Comparable<E> implementeras. Används det 
+råa gränssnittet behöver man göra explicita typomvandlingar.
+
+(G) 
+public class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
+
+public int compareTo(ComparableCircle cc) {
+ 	if (o instanceof ComparableCircle) {
+ 	if (getRadius() > cc.getRadius() {
+ 		return 1;
+ 	}
+ 	else if (getRadius() < cc.getRadius()) {
+ 	return -1;
+ 	} 
+ 	else {
+ 	return 0;
+ 	}
+ }
+ throw new IllegalArgumentException();
+}
+}
